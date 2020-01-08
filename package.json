@@ -1,0 +1,13 @@
+{
+  "name": "project-name",
+  "version": "0.1.0",
+  "description": "",
+  "scripts": {
+    "start": "live-server & npm run build:css & npm run build:css-min",
+    "build:css": "sass --watch main.scss:main.css --style expanded",
+    "build:css-min": "sass --watch main.scss:main.min.css --style compressed --no-source-map",
+    "purge:css": "purgecss --config purgecss.config.js --out ./"
+  },
+  "author": "Víctor Rico",
+  "license": "ISC"
+}
