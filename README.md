@@ -1,3 +1,3 @@
 # Web Components starter
 
-Folder structure starter for web component (personal project)
+Folder structure starter for web component (personal projects)
