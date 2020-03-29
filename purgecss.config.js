@@ -1,14 +1,14 @@
 module.exports = {
-  content: ['index.html'],
-  css: ['main.min.css'],
+  content: ['**/*.html', '**/*.js'],
+  css: ['assets/css/main.min.css'],
   extractors: [
     {
       extractor: class {
         static extract(content) {
-          return content.match(/[\w-:/%+*>&\[\].]+(?<!:)/g) || [];
+          return content.match(/[\w-:/%+*>&\(\).]+(?<!:)/g) || [];
         }
       },
-      extensions: ['html']
+      extensions: ['html', 'js']
     }
   ]
 };
