@@ -1,41 +1,27 @@
-class prefixFooter extends HTMLElement {
+class Footer extends HTMLElement {
   constructor() {
     super();
     this.attachShadow({ mode: 'open' });
-    this.shadowRoot.innerHTML = this.buildFooterMarkup();
+    this.render();
   }
 
-  buildFooterMarkup() {
+  render() {
     const currentYear = new Date().getFullYear();
 
-    return `
+    this.shadowRoot.innerHTML = `
+      <link rel="stylesheet" href="/assets/css/main.min.css"/>
+
+      <style>
+        :host { display: bloc; }
+      </style>
+
       <div>
-        <footer className="container mx-auto px-3">
+        <footer class="container mx-auto px-3">
           <p>&copy;${currentYear}</p>
         </footer>
       </div>
     `;
   }
-
-  //   connectedCallback() {}
-
-  //   static get observedAttributes() {
-  //     return [''];
-  //   }
-
-  //   attributeChangedCallback(name, oldValue, newValue) {
-  //     if(newValue != oldValue) {
-  //       /* Listen for changes */
-  //     }
-  //   }
-
-  //   get attributeName() {
-  //     return this.getAttribute('attributeName');
-  //   }
-
-  //   set attributeName(val) {
-  //     this.setAttribute('attributeName', val)
-  //   }
 }
 
-customElements.define('prefix-footer', prefixFooter);
+customElements.define('c-footer', Footer);
