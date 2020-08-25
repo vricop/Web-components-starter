@@ -1,2 +1,2 @@
-import './assets/js/components/header.js';
-import './assets/js/components/footer.js';
+import './src/js/components/header.js';
+import './src/js/components/footer.js';
