@@ -1,2 +1,2 @@
-import './src/js/components/header.js';
-import './src/js/components/footer.js';
+import '/src/js/components/masthead.js';
+import '/src/js/components/mastfoot.js';

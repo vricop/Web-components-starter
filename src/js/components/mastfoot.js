@@ -1,4 +1,4 @@
-class Footer extends HTMLElement {
+class PrefixMastFoot extends HTMLElement {
   constructor() {
     super();
     this.attachShadow({ mode: 'open' });
@@ -24,4 +24,4 @@ class Footer extends HTMLElement {
   }
 }
 
-customElements.define('c-footer', Footer);
+customElements.define('prefix-mastfoot', PrefixMastFoot);

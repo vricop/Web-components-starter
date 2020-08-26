@@ -1,8 +1,8 @@
-@use '../node_modules/petricorcss/config' with (
+@use '../../node_modules/petricorcss/config' with (
   $variants: ()
 );
 
-@use '../node_modules/petricorcss';
+@use '../../node_modules/petricorcss';
 @use 'additional';
 @use 'animations';
 @use 'effects';

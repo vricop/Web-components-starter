@@ -1,4 +1,4 @@
-class Header extends HTMLElement {
+class PrefixMastHead extends HTMLElement {
   constructor() {
     super();
     this.attachShadow({ mode: 'open' });
@@ -16,4 +16,4 @@ class Header extends HTMLElement {
   }
 }
 
-customElements.define('c-header', Header);
+customElements.define('prefix-masthead', PrefixMastHead);
