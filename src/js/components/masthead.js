@@ -9,7 +9,7 @@ class PrefixMastHead extends HTMLElement {
     this.shadowRoot.innerHTML = `
       <link rel="stylesheet" href="/assets/css/main.min.css">
 
-      <div className="container mx-auto mx-3">
+      <div class="container mx-auto mx-3">
         <header>Header</header>
       </div>
     `;
